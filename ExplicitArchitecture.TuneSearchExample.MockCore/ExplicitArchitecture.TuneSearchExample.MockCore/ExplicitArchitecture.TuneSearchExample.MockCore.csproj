@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageVersion>0.1.0</PackageVersion>
+    <Authors>Robin Nunkesser</Authors>
+    <PackageLicenseUrl>https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-mockcore-nuget/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-mockcore-nuget</PackageProjectUrl>
+    <Description>Application core mock of an example for explicit architecture</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="ExplicitArchitecture.TuneSearchExample.Core.Ports" Version="0.1.1" />
+  </ItemGroup>
+</Project>
