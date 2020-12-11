@@ -7,7 +7,7 @@ namespace ExplicitArchitecture.TuneSearchExample.MockCore
 {
     public class MockSearchTracksService : ISearchTracksService
     {
-        private static List<CollectionEntity> CreateMock()
+        private static List<ICollectionEntity> CreateMock()
         {
             var collection1 =
                 new CollectionEntity() {Name = "From Here to Now to You"};
@@ -590,7 +590,7 @@ namespace ExplicitArchitecture.TuneSearchExample.MockCore
                 TrackName = "Better Together (feat. Paula Fuga)",
                 TrackNumber = 14
             });
-            var collections = new List<CollectionEntity>
+            var collections = new List<ICollectionEntity>
             {
                 collection1,
                 collection2,
@@ -600,9 +600,9 @@ namespace ExplicitArchitecture.TuneSearchExample.MockCore
             };
             return collections;
         }
-
-        public async Task Execute(SearchTracksDTO inDTO,
-            Action<List<CollectionEntity>> successHandler,
+        
+        public async Task Execute(ISearchTerm inDTO,
+            Action<List<ICollectionEntity>> successHandler,
             Action<Exception> errorHandler)
         {
             successHandler(CreateMock());
