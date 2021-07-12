@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ExplicitArchitecture.TuneSearchExample.Core.Ports;
+using MusicPorts;
 
 namespace ExplicitArchitecture.TuneSearchExample.MockCore
 {

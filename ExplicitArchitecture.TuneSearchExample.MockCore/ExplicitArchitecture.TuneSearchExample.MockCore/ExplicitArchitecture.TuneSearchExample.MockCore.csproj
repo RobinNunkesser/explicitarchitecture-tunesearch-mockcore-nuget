@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageVersion>0.1.2</PackageVersion>
+    <PackageVersion>0.1.3</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
     <PackageLicenseUrl>https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-mockcore-nuget/blob/main/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-mockcore-nuget</PackageProjectUrl>
@@ -11,6 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExplicitArchitecture.TuneSearchExample.Core.Ports" Version="0.1.4" />
+    <None Remove="MusicPorts" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MusicPorts" Version="0.1.4" />
   </ItemGroup>
 </Project>
